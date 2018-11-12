@@ -1,0 +1,1 @@
+valid_index = {'value':'position:asc','value':'price:asc'}

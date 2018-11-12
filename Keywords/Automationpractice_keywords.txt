@@ -1,0 +1,35 @@
+*** Settings ***
+Library    SeleniumLibrary
+Variables    ../Objects/Women_section.py
+
+*** Variables ***
+${url}	http://automationpractice.com/index.php?id_category=3&controller=category#/
+${browser}	chrome
+
+*** Keywords ***
+Open Browser in Women Section And Maximize
+    Open Browser    ${url}    ${browser}  
+    Maximize Browser Window
+
+    
+Capture Prtc And Close Browser
+    Capture Page Screenshot 
+    Close Browser
+
+Sorting Women Clothes
+    Select From List By Label    ${select_product}    Price: Lowest first
+    Click Element    ${checker_availability}
+    Sleep    2
+
+Compare products
+    Mouse Up    ${mouse_up1}
+    Wait Until Element Is Visible   ${compare_product2}
+    Click Element    ${compare_product2}
+    Sleep    2
+    Mouse Up    ${mouse_up2}
+    Click Element    ${compare_product3}  
+    Wait Until Element Is Visible   ${btn_compare_link}
+    Click Element    ${btn_compare_link}   
+    Sleep    5
+    
+    

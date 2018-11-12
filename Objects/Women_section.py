@@ -1,0 +1,11 @@
+## Main Women Selection
+select_product ='id=selectProductSort'
+compare_product = 'xpath=//a[@class="add_to_compare"]'
+compare_product2 = 'xpath=//*[@id="center_column"]/ul/li[1]/div/div[3]/div[2]'
+compare_product3 = 'xpath=//*[@id="center_column"]/ul/li[2]/div/div[3]/div[2]'
+mouse_up1 ='xpath=//*[@id="center_column"]/ul/li[1]/div/div[2]'
+mouse_up2 ='xpath=//*[@id="center_column"]/ul/li[2]/div/div[2]'
+btn_compare = 'xpath=//*[@id="center_column"]/div[3]/div[2]/form/button'
+btn_compare_link = 'xpath=//*[@class="compare-form"]'
+checker_availability = 'id=layered_quantity_1'
+product_list='xpath=//*[@id="center_column"]/ul'
